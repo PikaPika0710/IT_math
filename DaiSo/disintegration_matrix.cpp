@@ -145,7 +145,7 @@ void phanRaMaTran(float A[2][2], float B[2][2])
         for (int j = 0; j < 2; j++)
             C[i][j] /= k;
     float result[2][2];
-    cout << "Ma tran phan ra: " << endl;
+    cout << "\nMa tran phan ra: " << endl;
     for (int i = 0; i < 2; ++i)
     {
         for (int j = 0; j < 2; ++j)
@@ -165,10 +165,10 @@ int main()
     float A[2][2] = {1, 2, 3, 4};
     float *tR;
     tR = triRieng(A);
-    cout << "Cac tri rieng la: " << endl;
+    cout << "\nCac tri rieng la: " << endl;
     cout << tR[0] << endl;
     cout << tR[1] << endl;
-    cout << "Cac vecto rieng la: " << endl;
+    cout << "\nCac vecto rieng la: " << endl;
     float *vectoRieng1;
     vectoRieng1 = vectoRieng(A, tR[0]);
     float x1 = vectoRieng1[0];
@@ -177,12 +177,11 @@ int main()
     float *vectoRieng2;
     vectoRieng2 = vectoRieng(A, tR[1]);
     cout << vectoRieng2[0] << ", " << vectoRieng2[1] << endl;
-
     float mtV[2][2] = {x1, vectoRieng2[0], x2, vectoRieng2[1]};
-    cout << "Ma Tran V: " << endl;
+    cout << "\nMa Tran V: " << endl;
     outputMatrix(mtV);
     float diag[2][2] = {tR[0], 0, 0, tR[1]};
-    cout << "Ma Tran Duong Cheo" << endl;
+    cout << "\nMa Tran Duong Cheo" << endl;
     outputMatrix(diag);
 
     phanRaMaTran(mtV, diag);

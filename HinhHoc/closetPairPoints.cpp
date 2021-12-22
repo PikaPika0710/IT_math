@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <climits>
+#include<float.h>
 using namespace std;
 //FIND CLOSEST PAIR OF POINTS O(nlog(n))
 /*
@@ -41,7 +42,7 @@ inline double dist(Point p1, Point p2)
 
 double bruteForce(Point P[], int n, Point &p1, Point &p2)
 {
-    double min = __DBL_MAX__;
+    double min = DBL_MAX; 
     for (int i = 0; i < n; ++i)
         for (int j = i + 1; j < n; ++j)
             if (dist(P[i], P[j]) < min)
@@ -129,7 +130,7 @@ int main()
 
     // Point P[] = {{2, 3}, {12, 30}, {40, 50}, {5, 1}, {12, 10}, {3, 4}};
     Point P[] = {{0,0}, {-2,0}, {4,0}, {1,1}, {3,3}, {-2,2}, {5,2}};
-    Point p1 = {__DBL_MAX__, __DBL_MAX__}, p2 = {__DBL_MAX__, __DBL_MAX__};
+    Point p1 = {DBL_MAX, DBL_MAX}, p2 = {DBL_MAX, DBL_MAX};
 
     int n = sizeof(P) / sizeof(P[0]);
     qsort(P, n, sizeof(Point), compareX);

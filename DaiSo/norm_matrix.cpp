@@ -1,6 +1,6 @@
 #include <iostream>
 #include <math.h>
-
+#include<limits.h>
 using namespace std;
 class norm
 {
@@ -59,7 +59,7 @@ public:
 int main()
 {
     int A[3][3] = {2, 3, 4, 5, 4, 5, 2, 1, 4};
-    cout << norm::ferobinus_norm(A, 3,3) << endl;
-    cout << norm::norm_one(A, 3,3) << endl;
-    cout << norm::norm_vo_cung(A, 3,3) << endl;
+    cout << norm::ferobinus_norm(A,3,3) << endl;
+    cout << norm::norm_one(A,3,3) << endl;
+    cout << norm::norm_vo_cung(A,3,3) << endl;
 }
