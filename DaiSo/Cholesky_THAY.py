@@ -1,5 +1,4 @@
-[9/29 9:53 AM] Nguyen Van Hieu - CNTT
-    
+
 
 import numpy as np
 
@@ -37,7 +36,7 @@ def cholesky_decomposition(a):
 
                 L[i,j] = (a[i,j]-sumk)/L[j,j]
 
-return L
+    return L
 
 if __name__ == '__main__':
 
@@ -47,21 +46,15 @@ print('----- Matrix A: -----\n' + str(a) + '\n')
 
 # ====> Lưu ý
 
-    v= np.linalg.eigvals(a)
+v= np.linalg.eigvals(a)
 
 print('----- Matrix V: -----\n' + str(v) + '\n')
 
-
-
-    L = cholesky_decomposition(a)
+L = cholesky_decomposition(a)
 
 print('----- Matrix L: -----\n' + str(L) + '\n')
 
-
-
-
-
-    LL = np.dot(L, np.transpose(L))
+LL = np.dot(L, np.transpose(L))
 
 print('----- Matrix LL: -----\n' + str(LL) + '\n')
 

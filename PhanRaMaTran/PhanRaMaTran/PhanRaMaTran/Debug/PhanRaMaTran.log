@@ -1,8 +1,0 @@
-﻿  PhanRaMaTran.cpp
-G:\University\ToanUngDungCNTT\Code\PhanRaMaTran\PhanRaMaTran\Polynomial.h(136,21): warning C4018: '<': signed/unsigned mismatch
-G:\University\ToanUngDungCNTT\Code\PhanRaMaTran\PhanRaMaTran\Matrix.h(95,30): warning C4018: '<': signed/unsigned mismatch
-G:\University\ToanUngDungCNTT\Code\PhanRaMaTran\PhanRaMaTran\Matrix.h(84): message : while compiling class template member function 'void Matrix<double>::Decomposition(Matrix<double> &,Matrix<double> &)'
-G:\University\ToanUngDungCNTT\Code\PhanRaMaTran\PhanRaMaTran\PhanRaMaTran.cpp(40): message : see reference to function template instantiation 'void Matrix<double>::Decomposition(Matrix<double> &,Matrix<double> &)' being compiled
-G:\University\ToanUngDungCNTT\Code\PhanRaMaTran\PhanRaMaTran\PhanRaMaTran.cpp(34): message : see reference to class template instantiation 'Matrix<double>' being compiled
-G:\University\ToanUngDungCNTT\Code\PhanRaMaTran\PhanRaMaTran\Matrix.h(102,29): warning C4018: '<': signed/unsigned mismatch
-  PhanRaMaTran.vcxproj -> G:\University\ToanUngDungCNTT\Code\PhanRaMaTran\Debug\PhanRaMaTran.exe
